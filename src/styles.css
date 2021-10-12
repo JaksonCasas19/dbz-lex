@@ -39,3 +39,7 @@
   .p-1 {
     padding: 1px;
   }
+
+  .row{
+    display: flex;
+  }
