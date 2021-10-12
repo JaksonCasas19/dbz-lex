@@ -1,15 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-personajes',
-  templateUrl: './personajes.component.html',
-  styleUrls: ['./personajes.component.css']
+  templateUrl: './personajes.component.html'
 })
-export class PersonajesComponent implements OnInit {
+export class PersonajesComponent  {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  personajes: any[] = [];
 
 }
