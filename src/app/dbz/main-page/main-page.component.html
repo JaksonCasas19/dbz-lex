@@ -9,9 +9,16 @@
     </div>
 
     <div class="col">
-        <app-agregar></app-agregar>
+        <app-agregar 
+        [nuevo]="nuevo"
+        (onNuevoPersonaje)="agregarNuevoPersonaje($event)"
+        ></app-agregar>
     </div>
 </div>
+
+<!--
+<button (click)="play()">Play</button>-->
+
 
 <!--<input type="text" 
             placeholder="Nombre"
