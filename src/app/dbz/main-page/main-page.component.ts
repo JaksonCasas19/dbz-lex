@@ -9,28 +9,28 @@ import { DbzService } from '../services/dbz.service';
 })
 export class MainPageComponent {
   
-  constructor(private dbzService:DbzService){
+  constructor(){
     
   }
 
-  get personajes():Personaje[]{
+  /*get personajes():Personaje[]{
     return this.dbzService.personajes;
-  }
+  }*/
 
   nuevo: Personaje = {
     nombre:'Maestro Roshi',
     poder:1000
   }
-
+/*
   agregarNuevoPersonaje(argumento:Personaje){
     this.personajes.push(argumento);
     this.play()
-  }
+  }*/
 
-  play(){
+  /*play(){
     var audio = new Audio('/assets/new-message-alert.mp3');
     audio.play();
-}
+}*/
 
   /*cambiarNombre(event:any){
     console.log(event.target.value);
