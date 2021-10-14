@@ -8,20 +8,14 @@ import { DbzService } from '../services/dbz.service';
   templateUrl: './main-page.component.html'
 })
 export class MainPageComponent {
+  
+  constructor(private dbzService:DbzService){
+    
+  }
 
-  constructor(private dbzService:DbzService){}
-
-  personajes: Personaje[] = [
-    {
-      nombre: 'Goku',
-      poder: 15000
-    },
-    {
-      nombre:'Vegeta',
-      poder:7500
-    }
-  ];
-
+  get personajes():Personaje[]{
+    return this.dbzService.personajes;
+  }
 
   nuevo: Personaje = {
     nombre:'Maestro Roshi',
