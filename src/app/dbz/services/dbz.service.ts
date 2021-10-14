@@ -20,5 +20,9 @@ export class DbzService{
       get personajes():Personaje[]{
           return [...this._personajes];
       }
+
+      agregarPersonaje(personaje:Personaje){
+          this._personajes.push(personaje);
+      }
     
 }
